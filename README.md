@@ -8,17 +8,25 @@ Actually, I've heard that github markdown allows you to insert LaTeX math, so I 
 
 see https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions
 
-Inline math:
-* "$"-syntax works: `$e^{i\pi} + 1 = 0$` gives $e^{i\pi} + 1 = 0$
+**Inline math:**
+
+Math is called inline when it is placed in the flow of the text.
+* "$"-syntax works: `$e^{i\pi} + 1 = 0$` gives $e^{i\pi} + 1 = 0$.
 * But not the alternate "\\(" ... "\\)" syntax from LaTeX: `\(e^{i\pi} = - 1\)` gives \(e^{i\pi} = - 1\), so that doesn't work.
 
-How about display math, meaning math centered in its own line? The `$$` syntax works, but there are some limits
+**Display math**
+
+Display math is shown on it's own line, usually centered horizontally.  Here is an example of what this looks like:
+
+$$ e^{i\pi} + 1 = 0 $$
+
+For display math, the `$$` syntax from LaTeX works, but there are some limits:
 ```
 * You can't put the display math on the same line as other text. This: $$ e^{i\pi} + 1 = 0 $$
-   doesn't work because it is written in-line and markdown tries to make the written and display versions fairly similar
+   doesn't work.
 ```
 * You can't put the display math on the same line as other text. This: `$$ e^{i\pi} + 1 = 0 $$` 
-   doesn't work because it is written in-line and markdown tries to make the written and display versions fairly similar
+   doesn't work.
 ```
 * It also has problems if it is on its own line but immediately after a list, 
    because markdown sees it as part of the list text:
@@ -36,11 +44,11 @@ $$e^{i\pi} + 1 = 0$$
 
 $$e^{i\pi} + 1 = 0$$
 ```
-In non-list text, it is sufficient for it to be on its own line (but separate paragraph is good, too): 
+In non-list text, it is sometimes sufficient for it to be on its own line, but I think it is good practice to use a separate paragraph, because that always seems to work.  But here goes:
 $$e^{i\pi} + 1 = 0$$
 Yes, that works.
 ```
-In non-list text, it is sufficient for it to be on its own line (but separate paragraph is good, too): 
+In non-list text, it is sometimes sufficient for it to be on its own line, but I think it is good practice to use a separate paragraph, because that always seems to work.  But here goes:
 $$e^{i\pi} + 1 = 0$$
 Yes, that works.
 
