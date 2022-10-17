@@ -44,15 +44,18 @@ $$e^{i\pi} + 1 = 0$$
 
 $$e^{i\pi} + 1 = 0$$
 ```
-In non-list text, it is sometimes sufficient for it to be on its own line, but I think it is good practice to use a separate paragraph, because that always seems to work.  But here goes:
+In non-list text, it is sometimes sufficient for it to be on its own line, but I think it is good 
+practice to use a separate paragraph, because that always seems to work.  But here goes:
 $$e^{i\pi} + 1 = 0$$
 Yes, that works.
 ```
-In non-list text, it is sometimes sufficient for it to be on its own line, but I think it is good practice to use a separate paragraph, because that always seems to work.  But here goes:
+In non-list text, it is sometimes sufficient for it to be on its own line, but I think it is good 
+practice to use a separate paragraph, because that always seems to work.  But here goes:
 $$e^{i\pi} + 1 = 0$$
 Yes, that works.
 
-Finally, the "$$" syntax doesn't work if it is a long equation where you want several lines for entering the equation.  For this, a "math" code block is supposed to work, but I don't seem to be doing it right:
+Finally, the "$$" syntax doesn't work if it is a long equation where you want several lines for 
+entering the equation.  For this, a "math" code block is supposed to work, but I don't seem to be doing it right:
 ```math
 e^{i\pi}  + 1 = 0
 ```
